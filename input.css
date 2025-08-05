@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+  background: linear-gradient(to bottom, #ff6a3d, #ff2ba1);
+}
+
+.gradient-body {
+  background: linear-gradient(to top, #eef1fc, #ffffff);
+}
+
+.gradient-dark {
+  background: linear-gradient(to bottom, #5b6cff, #9c3dd4, #f94c9c);
+}
+
+/* #5B6CFF, #F94C9C */
