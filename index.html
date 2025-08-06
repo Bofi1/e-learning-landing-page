@@ -1,3 +1,5 @@
+<!-- phone v - trabajar en el 50vh y darle o una altura maxima o una ya por defecto (que esto seria lo mas viable) -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,162 +8,184 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-jakarta gradient-body">
-    <nav
-      class="flex w-full justify-between py-8 px-5 items-center md:absolute md:top-0 md:z-[999]"
-    >
-      <div><img class="h-7" src="assets/logo-dark.svg" alt="logo-dark" /></div>
-      <button
-        class="bg-bluedark text-white py-4 px-7 rounded-[10rem] font-semibold"
+  <body
+    class="font-jakarta gradient-body flex flex-col justify-center items-center"
+  >
+    <div class="relative flex flex-col items-center xl:max-w-[1440px]">
+      <nav
+        class="flex w-full justify-between py-8 px-5 items-center md:absolute md:top-0 md:z-[999]"
       >
-        Get Started
-      </button>
-    </nav>
-
-    <section class="md:grid grid-cols-2 relative overflow-hidden">
-      <article
-        class="h-[50vh] flex flex-col justify-around px-5 md:justify-center md:h-full"
-      >
-        <h1 class="text-bluedark font-bold text-4xl">
-          <span>Maximize skill,</span><br /><span>minimize budget</span>
-        </h1>
-        <h2 class="text-mygray">
-          Our modern courses across a range of indemand skills will give you the
-          knowledge you need to live the life you want
-        </h2>
-
         <div>
-          <button
-            class="py-5 px-12 text-white rounded-[10rem] gradient font-semibold"
-            type="button"
-          >
+          <img class="h-7" src="assets/logo-dark.svg" alt="logo-dark" />
+        </div>
+        <button
+          class="bg-bluedark text-white py-4 px-7 rounded-[10rem] font-semibold"
+        >
+          Get Started
+        </button>
+      </nav>
+
+      <section class="md:grid grid-cols-2 relative overflow-hidden">
+        <article
+          class="h-[333px] md:h-[707px] flex flex-col justify-around px-5 md:justify-center md:pl-10"
+        >
+          <h1 class="text-bluedark font-bold text-4xl md:mt-16">
+            <span class="md:text-5xl">Maximize skill,</span><br /><span
+              class="md:text-5xl"
+              >minimize budget</span
+            >
+          </h1>
+          <h2 class="text-mygray md:my-10 md:text-lg">
+            Our modern courses across a range of indemand skills will give you
+            the knowledge you need to live the life you want
+          </h2>
+
+          <div>
+            <button
+              class="py-5 px-12 text-white rounded-[10rem] gradient font-semibold md:text-xl"
+              type="button"
+            >
+              Get Started
+            </button>
+          </div>
+        </article>
+
+        <div
+          class="pt-5 flex justify-center md:flex md:justify-center md:items-center md:mb-8 xl:mb-12"
+        >
+          <img
+            class="md:hidden xl:flex xl:mt-[100px] xl:h-[500px]"
+            src="assets/image-hero-mobile.webp"
+            alt="hero-mobile"
+          />
+          <img
+            class="hidden md:flex md:scale-[2] md:ml-[15rem] md:pt-[8rem] md:pb-[10rem] md:h-[707px] xl:hidden"
+            src="assets/image-hero-tablet.webp"
+            alt="hero-tablet"
+          />
+          <!-- <img
+            class="hidden xl:flex"
+            src="assets/image-hero-mobile.webp"
+            alt="hero-tablet"
+          /> -->
+        </div>
+      </section>
+
+      <main
+        class="w-full px-6 pb-20 md:grid md:grid-cols-2 md:gap-10 xl:grid-cols-3 xl:max-w-[1100px] xl:my-20"
+      >
+        <article
+          class="p-6 gradient font-semibold text-white flex rounded-2xl md:items-center"
+        >
+          <h2 class="text-2xl">
+            Check out our most <br />
+            popular courses!
+          </h2>
+        </article>
+
+        <article
+          class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg md:mt-0 xl:mt-0"
+        >
+          <img
+            class="absolute top-[-1.8rem]"
+            src="assets/icon-animation.svg"
+            alt="icon-animation"
+          />
+
+          <h3 class="font-semibold text-lg">Animation</h3>
+          <p class="text-mygray mt-4 text-[15px]">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <button class="text-mypink font-semibold my-6" type="button">
             Get Started
           </button>
-        </div>
-      </article>
+        </article>
 
-      <div class="pt-5 md:flex md:justify-center md:items-center">
-        <img
-          class="md:hidden"
-          src="assets/image-hero-mobile.webp"
-          alt="hero-mobile"
-        />
-        <img
-          class="hidden md:flex md:scale-[2] md:ml-[15rem] md:pt-[8rem] md:pb-[10rem]"
-          src="assets/image-hero-tablet.webp"
-          alt="hero-tablet"
-        />
+        <article
+          class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg xl:mt-0"
+        >
+          <img
+            class="absolute top-[-1.8rem]"
+            src="assets/icon-design.svg"
+            alt="icon-design"
+          />
+
+          <h3 class="font-semibold text-lg">Design</h3>
+          <p class="text-mygray mt-4 text-[15px]">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <button class="text-mypink font-semibold my-6" type="button">
+            Get Started
+          </button>
+        </article>
+
+        <article
+          class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
+        >
+          <img
+            class="absolute top-[-1.8rem]"
+            src="assets/icon-photography.svg"
+            alt="icon-photography"
+          />
+
+          <h3 class="font-semibold text-lg">Photography</h3>
+          <p class="text-mygray mt-4 text-[15px]">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <button class="text-mypink font-semibold my-6" type="button">
+            Get Started
+          </button>
+        </article>
+
+        <article
+          class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
+        >
+          <img
+            class="absolute top-[-1.8rem]"
+            src="assets/icon-crypto.svg"
+            alt="icon-crypto"
+          />
+
+          <h3 class="font-semibold text-lg">Crypto</h3>
+          <p class="text-mygray mt-4 text-[15px]">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <button class="text-mypink font-semibold my-6" type="button">
+            Get Started
+          </button>
+        </article>
+
+        <article
+          class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
+        >
+          <img
+            class="absolute top-[-1.8rem]"
+            src="assets/icon-business.svg"
+            alt="icon-business"
+          />
+
+          <h3 class="font-semibold text-lg">Business</h3>
+          <p class="text-mygray mt-4 text-[15px]">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <button class="text-mypink font-semibold my-6" type="button">
+            Get Started
+          </button>
+        </article>
+      </main>
+    </div>
+
+    <footer
+      class="flex justify-between py-8 px-5 items-center bg-bluedark w-full"
+    >
+      <div>
+        <img class="h-7" src="assets/logo-light.svg" alt="logo-dark" />
       </div>
-    </section>
-
-    <main class="w-full px-6 pb-20 md:grid md:grid-cols-2 md:gap-4">
-      <article
-        class="p-6 gradient font-semibold text-white flex rounded-2xl md:items-center"
-      >
-        <h2 class="text-2xl">
-          Check out our most <br />
-          popular courses!
-        </h2>
-      </article>
-
-      <article
-        class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg md:mt-0"
-      >
-        <img
-          class="absolute top-[-1.8rem]"
-          src="assets/icon-animation.svg"
-          alt="icon-animation"
-        />
-
-        <h3 class="font-semibold text-lg">Animation</h3>
-        <p class="text-mygray mt-4 text-[15px]">
-          Learn the latest animation techniques to create stunning motion design
-          and captivate your audience.
-        </p>
-        <button class="text-mypink font-semibold my-6" type="button">
-          Get Started
-        </button>
-      </article>
-
-      <article
-        class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
-      >
-        <img
-          class="absolute top-[-1.8rem]"
-          src="assets/icon-design.svg"
-          alt="icon-design"
-        />
-
-        <h3 class="font-semibold text-lg">Design</h3>
-        <p class="text-mygray mt-4 text-[15px]">
-          Create beautiful, usable interfaces to help shape the future of how
-          the web looks.
-        </p>
-        <button class="text-mypink font-semibold my-6" type="button">
-          Get Started
-        </button>
-      </article>
-
-      <article
-        class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
-      >
-        <img
-          class="absolute top-[-1.8rem]"
-          src="assets/icon-photography.svg"
-          alt="icon-photography"
-        />
-
-        <h3 class="font-semibold text-lg">Photography</h3>
-        <p class="text-mygray mt-4 text-[15px]">
-          Explore critical fundamentals like lighting, composition, and focus to
-          capture exceptional photos.
-        </p>
-        <button class="text-mypink font-semibold my-6" type="button">
-          Get Started
-        </button>
-      </article>
-
-      <article
-        class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
-      >
-        <img
-          class="absolute top-[-1.8rem]"
-          src="assets/icon-crypto.svg"
-          alt="icon-crypto"
-        />
-
-        <h3 class="font-semibold text-lg">Crypto</h3>
-        <p class="text-mygray mt-4 text-[15px]">
-          All you need to know to get started investing in crypto. Go from
-          beginner to advanced with this 54 hour course.
-        </p>
-        <button class="text-mypink font-semibold my-6" type="button">
-          Get Started
-        </button>
-      </article>
-
-      <article
-        class="bg-white rounded-2xl px-6 pt-10 relative mt-[3.5rem] shadow-lg"
-      >
-        <img
-          class="absolute top-[-1.8rem]"
-          src="assets/icon-business.svg"
-          alt="icon-business"
-        />
-
-        <h3 class="font-semibold text-lg">Business</h3>
-        <p class="text-mygray mt-4 text-[15px]">
-          A step-by-step playbook to help you start, scale, and sustain your
-          business without outside investment.
-        </p>
-        <button class="text-mypink font-semibold my-6" type="button">
-          Get Started
-        </button>
-      </article>
-    </main>
-
-    <footer class="flex justify-between py-8 px-5 items-center bg-bluedark">
-      <div><img class="h-7" src="assets/logo-light.svg" alt="logo-dark" /></div>
       <button
         class="gradient-dark text-white py-4 px-7 rounded-[10rem] font-semibold"
       >
